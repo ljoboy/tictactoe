@@ -13,12 +13,12 @@ $('table tr td').click(function () {
         if (findWinner() !== -1 && findWinner() !== "") {
             if (findWinner() === 'X') {
                 $('body').append('<div class="winner"><span>Winner</span>X</div>');
-                $('body').append('<button onclick="location.reload()">Rejouer</button>')
+                $(`body`).append('<button onclick="location.reload()">Rejouer</button>');
                 $('.winner').css('background-color', '#61892f');
                 $('button').css('color', '#61892f');
             } else {
-                $('body').append('<div class="winner"><span>Winner</span>O</div>');
-                $('body').append('<button onclick="location.reload()">Rejouer</button>')
+                $(`body`).append('<div class="winner"><span>Winner</span>O</div>');
+                $('body').append('<button onclick="location.reload()">Rejouer</button>');
                 $('.winner').css('background-color', '#e85a4f');
                 $('button').css('color', '#e85a4f');
             }
